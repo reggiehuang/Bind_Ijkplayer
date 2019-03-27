@@ -1,0 +1,6 @@
+Binding for:
+tv.danmaku.ijk.media:ijkplayer-arm64:0.8.8
+
+Dependencies:
+
+ijkplayer-arm64-0.8.8.aar,    Path=C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\tv.danmaku.ijk.media\ijkplayer-arm64\0.8.8\e42246ecbc9ba73b81f38a95e117e90c912cbf02\ijkplayer-arm64-0.8.8.aar

@@ -1,0 +1,4 @@
+E:\07_TestProject\Android_Demo\Bind_Ijkplayer\Bind_Ijkplayer\AndroidBindings\Binding_IjkplayerArmv7A\bin\Debug\Binding_IjkplayerArmv7A.dll
+E:\07_TestProject\Android_Demo\Bind_Ijkplayer\Bind_Ijkplayer\AndroidBindings\Binding_IjkplayerArmv7A\bin\Debug\Binding_IjkplayerArmv7A.pdb
+E:\07_TestProject\Android_Demo\Bind_Ijkplayer\Bind_Ijkplayer\AndroidBindings\Binding_IjkplayerArmv7A\obj\Debug\Binding_IjkplayerArmv7A.dll
+E:\07_TestProject\Android_Demo\Bind_Ijkplayer\Bind_Ijkplayer\AndroidBindings\Binding_IjkplayerArmv7A\obj\Debug\Binding_IjkplayerArmv7A.pdb

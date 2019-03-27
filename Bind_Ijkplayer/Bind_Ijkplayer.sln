@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bind_Ijkplayer", "Bind_Ijkplayer\Bind_Ijkplayer.csproj", "{22BE6234-4CC4-40D2-A4FC-BAD256868EA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding_IjkplayerArmv7A", "Bind_Ijkplayer\AndroidBindings\Binding_IjkplayerArmv7A\Binding_IjkplayerArmv7A.csproj", "{B3027446-55A0-4204-8CF4-E8FF58EC751E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding_IjkplayerX8664", "Bind_Ijkplayer\AndroidBindings\Binding_IjkplayerX8664\Binding_IjkplayerX8664.csproj", "{F4C77BF8-1114-4521-9FF5-5A61B2BE5E97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding_IjkplayerArm64", "Bind_Ijkplayer\AndroidBindings\Binding_IjkplayerArm64\Binding_IjkplayerArm64.csproj", "{D776542D-46CF-430F-8640-26C2FC789C59}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{22BE6234-4CC4-40D2-A4FC-BAD256868EA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22BE6234-4CC4-40D2-A4FC-BAD256868EA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22BE6234-4CC4-40D2-A4FC-BAD256868EA8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{22BE6234-4CC4-40D2-A4FC-BAD256868EA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22BE6234-4CC4-40D2-A4FC-BAD256868EA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22BE6234-4CC4-40D2-A4FC-BAD256868EA8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B3027446-55A0-4204-8CF4-E8FF58EC751E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3027446-55A0-4204-8CF4-E8FF58EC751E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3027446-55A0-4204-8CF4-E8FF58EC751E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3027446-55A0-4204-8CF4-E8FF58EC751E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4C77BF8-1114-4521-9FF5-5A61B2BE5E97}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4C77BF8-1114-4521-9FF5-5A61B2BE5E97}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4C77BF8-1114-4521-9FF5-5A61B2BE5E97}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4C77BF8-1114-4521-9FF5-5A61B2BE5E97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D776542D-46CF-430F-8640-26C2FC789C59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D776542D-46CF-430F-8640-26C2FC789C59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D776542D-46CF-430F-8640-26C2FC789C59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D776542D-46CF-430F-8640-26C2FC789C59}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

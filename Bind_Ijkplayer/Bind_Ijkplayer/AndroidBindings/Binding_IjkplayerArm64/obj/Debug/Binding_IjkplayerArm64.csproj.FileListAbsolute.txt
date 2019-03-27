@@ -1,0 +1,5 @@
+E:\07_TestProject\Android_Demo\Bind_Ijkplayer\Bind_Ijkplayer\AndroidBindings\Binding_IjkplayerArm64\bin\Debug\Binding_IjkplayerArm64.dll
+E:\07_TestProject\Android_Demo\Bind_Ijkplayer\Bind_Ijkplayer\AndroidBindings\Binding_IjkplayerArm64\bin\Debug\Binding_IjkplayerArm64.pdb
+E:\07_TestProject\Android_Demo\Bind_Ijkplayer\Bind_Ijkplayer\AndroidBindings\Binding_IjkplayerArm64\obj\Debug\Binding_IjkplayerArm64.csprojResolveAssemblyReference.cache
+E:\07_TestProject\Android_Demo\Bind_Ijkplayer\Bind_Ijkplayer\AndroidBindings\Binding_IjkplayerArm64\obj\Debug\Binding_IjkplayerArm64.dll
+E:\07_TestProject\Android_Demo\Bind_Ijkplayer\Bind_Ijkplayer\AndroidBindings\Binding_IjkplayerArm64\obj\Debug\Binding_IjkplayerArm64.pdb

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="tv.danmaku.ijk.media.player_arm64">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="BuildConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BuildConfig" static="false" type="tv.danmaku.ijk.media.player_arm64.BuildConfig" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="APPLICATION_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;tv.danmaku.ijk.media.player_arm64&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUILD_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAVOR" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Pragma" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Pragma" static="false" type="tv.danmaku.ijk.media.player_arm64.Pragma" visibility="public">
+</constructor>
+</class>
+</package>
+</api>

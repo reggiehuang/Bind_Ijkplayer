@@ -1,0 +1,2311 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<api>
+<package name="tv.danmaku.ijk.media.player">
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AbstractMediaPlayer" static="false" visibility="public">
+<implements name="tv.danmaku.ijk.media.player.IMediaPlayer" name-generic-aware="tv.danmaku.ijk.media.player.IMediaPlayer">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AbstractMediaPlayer" static="false" type="tv.danmaku.ijk.media.player.AbstractMediaPlayer" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="true" name="notifyOnBufferingUpdate" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="notifyOnCompletion" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="notifyOnError" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="notifyOnInfo" native="false" return="boolean" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="notifyOnPrepared" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="notifyOnSeekComplete" native="false" return="void" static="false" synchronized="false" visibility="protected">
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="notifyOnTimedText" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IjkTimedText">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="notifyOnVideoSizeChanged" native="false" return="void" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="resetListeners" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.misc.IMediaDataSource">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setOnBufferingUpdateListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnBufferingUpdateListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setOnCompletionListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnCompletionListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setOnErrorListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnErrorListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setOnInfoListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnInfoListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setOnPreparedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnPreparedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setOnSeekCompleteListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnSeekCompleteListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setOnTimedTextListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnTimedTextListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="true" name="setOnVideoSizeChangedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnVideoSizeChangedListener">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="tv.danmaku.ijk.media.player.AbstractMediaPlayer" extends-generic-aware="tv.danmaku.ijk.media.player.AbstractMediaPlayer" final="false" name="AndroidMediaPlayer" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="AndroidMediaPlayer" static="false" type="tv.danmaku.ijk.media.player.AndroidMediaPlayer" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAudioSessionId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentPosition" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDataSource" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDuration" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInternalMediaPlayer" native="false" return="android.media.MediaPlayer" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMediaInfo" native="false" return="tv.danmaku.ijk.media.player.MediaInfo" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTrackInfo" native="false" return="tv.danmaku.ijk.media.player.misc.ITrackInfo[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoSarDen" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoSarNum" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isLooping" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isPlayable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isPlaying" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pause" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="prepareAsync" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="seekTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAudioStreamType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+<parameter name="p2" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.FileDescriptor">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDisplay" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.SurfaceHolder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setKeepInBackground" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLogEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLooping" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScreenOnWhilePlaying" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSurface" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.Surface">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVolume" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setWakeMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="start" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AndroidMediaPlayer.AndroidMediaPlayerListenerHolder" static="false" visibility="">
+<implements name="android.media.MediaPlayer.OnBufferingUpdateListener" name-generic-aware="android.media.MediaPlayer.OnBufferingUpdateListener">
+</implements>
+<implements name="android.media.MediaPlayer.OnCompletionListener" name-generic-aware="android.media.MediaPlayer.OnCompletionListener">
+</implements>
+<implements name="android.media.MediaPlayer.OnErrorListener" name-generic-aware="android.media.MediaPlayer.OnErrorListener">
+</implements>
+<implements name="android.media.MediaPlayer.OnInfoListener" name-generic-aware="android.media.MediaPlayer.OnInfoListener">
+</implements>
+<implements name="android.media.MediaPlayer.OnPreparedListener" name-generic-aware="android.media.MediaPlayer.OnPreparedListener">
+</implements>
+<implements name="android.media.MediaPlayer.OnSeekCompleteListener" name-generic-aware="android.media.MediaPlayer.OnSeekCompleteListener">
+</implements>
+<implements name="android.media.MediaPlayer.OnTimedTextListener" name-generic-aware="android.media.MediaPlayer.OnTimedTextListener">
+</implements>
+<implements name="android.media.MediaPlayer.OnVideoSizeChangedListener" name-generic-aware="android.media.MediaPlayer.OnVideoSizeChangedListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AndroidMediaPlayer.AndroidMediaPlayerListenerHolder" static="false" type="tv.danmaku.ijk.media.player.AndroidMediaPlayer.AndroidMediaPlayerListenerHolder" visibility="public">
+<parameter name="p1" type="tv.danmaku.ijk.media.player.AndroidMediaPlayer">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onBufferingUpdate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.media.MediaPlayer">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCompletion" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.media.MediaPlayer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onError" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.media.MediaPlayer">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onInfo" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.media.MediaPlayer">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPrepared" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.media.MediaPlayer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSeekComplete" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.media.MediaPlayer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTimedText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.media.MediaPlayer">
+</parameter>
+<parameter name="p1" type="android.media.TimedText">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="onVideoSizeChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.media.MediaPlayer">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="mWeakMediaPlayer" static="false" transient="false" type="java.lang.ref.WeakReference" type-generic-aware="java.lang.ref.WeakReference&lt;tv.danmaku.ijk.media.player.AndroidMediaPlayer&gt;" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.media.MediaDataSource" extends-generic-aware="android.media.MediaDataSource" final="false" name="AndroidMediaPlayer.MediaDataSourceProxy" static="true" visibility="">
+<constructor deprecated="not deprecated" final="false" name="AndroidMediaPlayer.MediaDataSourceProxy" static="false" type="tv.danmaku.ijk.media.player.AndroidMediaPlayer.MediaDataSourceProxy" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.misc.IMediaDataSource">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSize" native="false" return="long" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="readAt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="byte[]">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="BuildConfig" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="BuildConfig" static="false" type="tv.danmaku.ijk.media.player.BuildConfig" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="APPLICATION_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;tv.danmaku.ijk.media.player&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="BUILD_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;release&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="false" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FLAVOR" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_CODE" static="true" transient="false" type="int" type-generic-aware="int" value="-1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="VERSION_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;&quot;" visibility="public" volatile="false">
+</field>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IMediaPlayer" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getAudioSessionId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getCurrentPosition" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDataSource" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getDuration" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getMediaInfo" native="false" return="tv.danmaku.ijk.media.player.MediaInfo" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTrackInfo" native="false" return="tv.danmaku.ijk.media.player.misc.ITrackInfo[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getVideoHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getVideoSarDen" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getVideoSarNum" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getVideoWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isLooping" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="deprecated" final="false" name="isPlayable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="isPlaying" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="pause" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="prepareAsync" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="seekTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setAudioStreamType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+<parameter name="p2" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.FileDescriptor">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.misc.IMediaDataSource">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setDisplay" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.SurfaceHolder">
+</parameter>
+</method>
+<method abstract="true" deprecated="deprecated" final="false" name="setKeepInBackground" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="deprecated" final="false" name="setLogEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setLooping" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOnBufferingUpdateListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnBufferingUpdateListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOnCompletionListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnCompletionListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOnErrorListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnErrorListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOnInfoListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnInfoListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOnPreparedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnPreparedListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOnSeekCompleteListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnSeekCompleteListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOnTimedTextListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnTimedTextListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setOnVideoSizeChangedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnVideoSizeChangedListener">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setScreenOnWhilePlaying" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSurface" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.Surface">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setVolume" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="true" deprecated="deprecated" final="false" name="setWakeMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="start" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="MEDIA_ERROR_IO" static="true" transient="false" type="int" type-generic-aware="int" value="-1004" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_ERROR_MALFORMED" static="true" transient="false" type="int" type-generic-aware="int" value="-1007" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_ERROR_NOT_VALID_FOR_PROGRESSIVE_PLAYBACK" static="true" transient="false" type="int" type-generic-aware="int" value="200" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_ERROR_SERVER_DIED" static="true" transient="false" type="int" type-generic-aware="int" value="100" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_ERROR_TIMED_OUT" static="true" transient="false" type="int" type-generic-aware="int" value="-110" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_ERROR_UNKNOWN" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_ERROR_UNSUPPORTED" static="true" transient="false" type="int" type-generic-aware="int" value="-1010" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_AUDIO_DECODED_START" static="true" transient="false" type="int" type-generic-aware="int" value="10003" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_AUDIO_RENDERING_START" static="true" transient="false" type="int" type-generic-aware="int" value="10002" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_AUDIO_SEEK_RENDERING_START" static="true" transient="false" type="int" type-generic-aware="int" value="10009" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_BAD_INTERLEAVING" static="true" transient="false" type="int" type-generic-aware="int" value="800" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_BUFFERING_END" static="true" transient="false" type="int" type-generic-aware="int" value="702" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_BUFFERING_START" static="true" transient="false" type="int" type-generic-aware="int" value="701" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_COMPONENT_OPEN" static="true" transient="false" type="int" type-generic-aware="int" value="10007" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_FIND_STREAM_INFO" static="true" transient="false" type="int" type-generic-aware="int" value="10006" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_MEDIA_ACCURATE_SEEK_COMPLETE" static="true" transient="false" type="int" type-generic-aware="int" value="10100" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_METADATA_UPDATE" static="true" transient="false" type="int" type-generic-aware="int" value="802" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_NETWORK_BANDWIDTH" static="true" transient="false" type="int" type-generic-aware="int" value="703" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_NOT_SEEKABLE" static="true" transient="false" type="int" type-generic-aware="int" value="801" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_OPEN_INPUT" static="true" transient="false" type="int" type-generic-aware="int" value="10005" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_STARTED_AS_NEXT" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_SUBTITLE_TIMED_OUT" static="true" transient="false" type="int" type-generic-aware="int" value="902" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_TIMED_TEXT_ERROR" static="true" transient="false" type="int" type-generic-aware="int" value="900" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_UNKNOWN" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_UNSUPPORTED_SUBTITLE" static="true" transient="false" type="int" type-generic-aware="int" value="901" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_VIDEO_DECODED_START" static="true" transient="false" type="int" type-generic-aware="int" value="10004" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_VIDEO_RENDERING_START" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_VIDEO_ROTATION_CHANGED" static="true" transient="false" type="int" type-generic-aware="int" value="10001" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_VIDEO_SEEK_RENDERING_START" static="true" transient="false" type="int" type-generic-aware="int" value="10008" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_INFO_VIDEO_TRACK_LAGGING" static="true" transient="false" type="int" type-generic-aware="int" value="700" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IMediaPlayer.OnBufferingUpdateListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onBufferingUpdate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IMediaPlayer.OnCompletionListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onCompletion" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IMediaPlayer.OnErrorListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onError" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IMediaPlayer.OnInfoListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onInfo" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IMediaPlayer.OnPreparedListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onPrepared" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IMediaPlayer.OnSeekCompleteListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onSeekComplete" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IMediaPlayer.OnTimedTextListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onTimedText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+<parameter name="p1" type="tv.danmaku.ijk.media.player.IjkTimedText">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IMediaPlayer.OnVideoSizeChangedListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onVideoSizeChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ISurfaceTextureHolder" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getSurfaceTexture" native="false" return="android.graphics.SurfaceTexture" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSurfaceTexture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.SurfaceTexture">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="setSurfaceTextureHost" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.ISurfaceTextureHost">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ISurfaceTextureHost" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="releaseSurfaceTexture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.SurfaceTexture">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IjkLibLoader" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="loadLibrary" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+<exception name="UnsatisfiedLinkError" type="java.lang.UnsatisfiedLinkError">
+</exception>
+</method>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="IjkMediaCodecInfo" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IjkMediaCodecInfo" static="false" type="tv.danmaku.ijk.media.player.IjkMediaCodecInfo" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="dumpProfileLevels" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLevelName" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProfileLevelName" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getProfileName" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setupCandidate" native="false" return="tv.danmaku.ijk.media.player.IjkMediaCodecInfo" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.media.MediaCodecInfo">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="RANK_ACCEPTABLE" static="true" transient="false" type="int" type-generic-aware="int" value="700" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RANK_LAST_CHANCE" static="true" transient="false" type="int" type-generic-aware="int" value="600" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RANK_MAX" static="true" transient="false" type="int" type-generic-aware="int" value="1000" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RANK_NON_STANDARD" static="true" transient="false" type="int" type-generic-aware="int" value="100" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RANK_NO_SENSE" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RANK_SECURE" static="true" transient="false" type="int" type-generic-aware="int" value="300" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RANK_SOFTWARE" static="true" transient="false" type="int" type-generic-aware="int" value="200" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="RANK_TESTED" static="true" transient="false" type="int" type-generic-aware="int" value="800" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mCodecInfo" static="false" transient="false" type="android.media.MediaCodecInfo" type-generic-aware="android.media.MediaCodecInfo" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mMimeType" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mRank" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="IjkMediaMeta" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IjkMediaMeta" static="false" type="tv.danmaku.ijk.media.player.IjkMediaMeta" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDurationInline" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getParcelableArrayList" native="false" return="java.util.ArrayList&lt;android.os.Bundle&gt;" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="parse" native="false" return="tv.danmaku.ijk.media.player.IjkMediaMeta" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.os.Bundle">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="AV_CH_BACK_CENTER" static="true" transient="false" type="long" type-generic-aware="long" value="256L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_BACK_LEFT" static="true" transient="false" type="long" type-generic-aware="long" value="16L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_BACK_RIGHT" static="true" transient="false" type="long" type-generic-aware="long" value="32L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_FRONT_CENTER" static="true" transient="false" type="long" type-generic-aware="long" value="4L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_FRONT_LEFT" static="true" transient="false" type="long" type-generic-aware="long" value="1L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_FRONT_LEFT_OF_CENTER" static="true" transient="false" type="long" type-generic-aware="long" value="64L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_FRONT_RIGHT" static="true" transient="false" type="long" type-generic-aware="long" value="2L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_FRONT_RIGHT_OF_CENTER" static="true" transient="false" type="long" type-generic-aware="long" value="128L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_2POINT1" static="true" transient="false" type="long" type-generic-aware="long" value="11L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_2_1" static="true" transient="false" type="long" type-generic-aware="long" value="259L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_2_2" static="true" transient="false" type="long" type-generic-aware="long" value="1539L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_3POINT1" static="true" transient="false" type="long" type-generic-aware="long" value="15L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_4POINT0" static="true" transient="false" type="long" type-generic-aware="long" value="263L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_4POINT1" static="true" transient="false" type="long" type-generic-aware="long" value="271L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_5POINT0" static="true" transient="false" type="long" type-generic-aware="long" value="1543L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_5POINT0_BACK" static="true" transient="false" type="long" type-generic-aware="long" value="55L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_5POINT1" static="true" transient="false" type="long" type-generic-aware="long" value="1551L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_5POINT1_BACK" static="true" transient="false" type="long" type-generic-aware="long" value="63L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_6POINT0" static="true" transient="false" type="long" type-generic-aware="long" value="1799L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_6POINT0_FRONT" static="true" transient="false" type="long" type-generic-aware="long" value="1731L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_6POINT1" static="true" transient="false" type="long" type-generic-aware="long" value="1807L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_6POINT1_BACK" static="true" transient="false" type="long" type-generic-aware="long" value="319L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_6POINT1_FRONT" static="true" transient="false" type="long" type-generic-aware="long" value="1739L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_7POINT0" static="true" transient="false" type="long" type-generic-aware="long" value="1591L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_7POINT0_FRONT" static="true" transient="false" type="long" type-generic-aware="long" value="1735L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_7POINT1" static="true" transient="false" type="long" type-generic-aware="long" value="1599L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_7POINT1_WIDE" static="true" transient="false" type="long" type-generic-aware="long" value="1743L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_7POINT1_WIDE_BACK" static="true" transient="false" type="long" type-generic-aware="long" value="255L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_HEXAGONAL" static="true" transient="false" type="long" type-generic-aware="long" value="311L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_MONO" static="true" transient="false" type="long" type-generic-aware="long" value="4L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_OCTAGONAL" static="true" transient="false" type="long" type-generic-aware="long" value="1847L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_QUAD" static="true" transient="false" type="long" type-generic-aware="long" value="51L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_STEREO" static="true" transient="false" type="long" type-generic-aware="long" value="3L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_STEREO_DOWNMIX" static="true" transient="false" type="long" type-generic-aware="long" value="1610612736L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LAYOUT_SURROUND" static="true" transient="false" type="long" type-generic-aware="long" value="7L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LOW_FREQUENCY" static="true" transient="false" type="long" type-generic-aware="long" value="8L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_LOW_FREQUENCY_2" static="true" transient="false" type="long" type-generic-aware="long" value="34359738368L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_SIDE_LEFT" static="true" transient="false" type="long" type-generic-aware="long" value="512L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_SIDE_RIGHT" static="true" transient="false" type="long" type-generic-aware="long" value="1024L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_STEREO_LEFT" static="true" transient="false" type="long" type-generic-aware="long" value="536870912L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_STEREO_RIGHT" static="true" transient="false" type="long" type-generic-aware="long" value="1073741824L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_SURROUND_DIRECT_LEFT" static="true" transient="false" type="long" type-generic-aware="long" value="8589934592L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_SURROUND_DIRECT_RIGHT" static="true" transient="false" type="long" type-generic-aware="long" value="17179869184L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_TOP_BACK_CENTER" static="true" transient="false" type="long" type-generic-aware="long" value="65536L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_TOP_BACK_LEFT" static="true" transient="false" type="long" type-generic-aware="long" value="32768L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_TOP_BACK_RIGHT" static="true" transient="false" type="long" type-generic-aware="long" value="131072L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_TOP_CENTER" static="true" transient="false" type="long" type-generic-aware="long" value="2048L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_TOP_FRONT_CENTER" static="true" transient="false" type="long" type-generic-aware="long" value="8192L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_TOP_FRONT_LEFT" static="true" transient="false" type="long" type-generic-aware="long" value="4096L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_TOP_FRONT_RIGHT" static="true" transient="false" type="long" type-generic-aware="long" value="16384L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_WIDE_LEFT" static="true" transient="false" type="long" type-generic-aware="long" value="2147483648L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="AV_CH_WIDE_RIGHT" static="true" transient="false" type="long" type-generic-aware="long" value="4294967296L" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FF_PROFILE_H264_BASELINE" static="true" transient="false" type="int" type-generic-aware="int" value="66" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FF_PROFILE_H264_CAVLC_444" static="true" transient="false" type="int" type-generic-aware="int" value="44" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FF_PROFILE_H264_CONSTRAINED" static="true" transient="false" type="int" type-generic-aware="int" value="512" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FF_PROFILE_H264_CONSTRAINED_BASELINE" static="true" transient="false" type="int" type-generic-aware="int" value="578" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FF_PROFILE_H264_EXTENDED" static="true" transient="false" type="int" type-generic-aware="int" value="88" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FF_PROFILE_H264_HIGH" static="true" transient="false" type="int" type-generic-aware="int" value="100" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FF_PROFILE_H264_HIGH_10" static="true" transient="false" type="int" type-generic-aware="int" value="110" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FF_PROFILE_H264_HIGH_10_INTRA" static="true" transient="false" type="int" type-generic-aware="int" value="2158" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FF_PROFILE_H264_HIGH_422" static="true" transient="false" type="int" type-generic-aware="int" value="122" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FF_PROFILE_H264_HIGH_422_INTRA" static="true" transient="false" type="int" type-generic-aware="int" value="2170" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FF_PROFILE_H264_HIGH_444" static="true" transient="false" type="int" type-generic-aware="int" value="144" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FF_PROFILE_H264_HIGH_444_INTRA" static="true" transient="false" type="int" type-generic-aware="int" value="2292" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FF_PROFILE_H264_HIGH_444_PREDICTIVE" static="true" transient="false" type="int" type-generic-aware="int" value="244" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FF_PROFILE_H264_INTRA" static="true" transient="false" type="int" type-generic-aware="int" value="2048" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FF_PROFILE_H264_MAIN" static="true" transient="false" type="int" type-generic-aware="int" value="77" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_AUDIO_STREAM" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;audio&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_BITRATE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;bitrate&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_CHANNEL_LAYOUT" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;channel_layout&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_CODEC_LEVEL" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;codec_level&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_CODEC_LONG_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;codec_long_name&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_CODEC_NAME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;codec_name&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_CODEC_PIXEL_FORMAT" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;codec_pixel_format&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_CODEC_PROFILE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;codec_profile&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_CODEC_PROFILE_ID" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;codec_profile_id&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_DURATION_US" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;duration_us&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_FORMAT" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;format&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_FPS_DEN" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;fps_den&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_FPS_NUM" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;fps_num&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_HEIGHT" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;height&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_LANGUAGE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;language&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_SAMPLE_RATE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;sample_rate&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_SAR_DEN" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;sar_den&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_SAR_NUM" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;sar_num&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_START_US" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;start_us&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_STREAMS" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;streams&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_TBR_DEN" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;tbr_den&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_TBR_NUM" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;tbr_num&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_TIMEDTEXT_STREAM" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;timedtext&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_TYPE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;type&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_VIDEO_STREAM" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;video&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_KEY_WIDTH" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;width&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_VAL_TYPE__AUDIO" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;audio&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_VAL_TYPE__TIMEDTEXT" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;timedtext&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_VAL_TYPE__UNKNOWN" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;unknown&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJKM_VAL_TYPE__VIDEO" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;video&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mAudioStream" static="false" transient="false" type="tv.danmaku.ijk.media.player.IjkMediaMeta.IjkStreamMeta" type-generic-aware="tv.danmaku.ijk.media.player.IjkMediaMeta.IjkStreamMeta" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mBitrate" static="false" transient="false" type="long" type-generic-aware="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mDurationUS" static="false" transient="false" type="long" type-generic-aware="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mFormat" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mMediaMeta" static="false" transient="false" type="android.os.Bundle" type-generic-aware="android.os.Bundle" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mStartUS" static="false" transient="false" type="long" type-generic-aware="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="mStreams" static="false" transient="false" type="java.util.ArrayList" type-generic-aware="java.util.ArrayList&lt;tv.danmaku.ijk.media.player.IjkMediaMeta.IjkStreamMeta&gt;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mVideoStream" static="false" transient="false" type="tv.danmaku.ijk.media.player.IjkMediaMeta.IjkStreamMeta" type-generic-aware="tv.danmaku.ijk.media.player.IjkMediaMeta.IjkStreamMeta" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="IjkMediaMeta.IjkStreamMeta" static="true" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IjkMediaMeta.IjkStreamMeta" static="false" type="tv.danmaku.ijk.media.player.IjkMediaMeta.IjkStreamMeta" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBitrateInline" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getChannelLayoutInline" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCodecLongNameInline" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCodecShortNameInline" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFpsInline" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLong" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getResolutionInline" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSampleRateInline" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="false" name="mBitrate" static="false" transient="false" type="long" type-generic-aware="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mChannelLayout" static="false" transient="false" type="long" type-generic-aware="long" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mCodecLongName" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mCodecName" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mCodecProfile" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mFpsDen" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mFpsNum" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mHeight" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="mIndex" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mLanguage" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mMeta" static="false" transient="false" type="android.os.Bundle" type-generic-aware="android.os.Bundle" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mSampleRate" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mSarDen" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mSarNum" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mTbrDen" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mTbrNum" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mType" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mWidth" static="false" transient="false" type="int" type-generic-aware="int" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="tv.danmaku.ijk.media.player.AbstractMediaPlayer" extends-generic-aware="tv.danmaku.ijk.media.player.AbstractMediaPlayer" final="true" name="IjkMediaPlayer" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IjkMediaPlayer" static="false" type="tv.danmaku.ijk.media.player.IjkMediaPlayer" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IjkLibLoader">
+</parameter>
+</constructor>
+<constructor deprecated="not deprecated" final="false" name="IjkMediaPlayer" static="false" type="tv.danmaku.ijk.media.player.IjkMediaPlayer" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="_prepareAsync" native="true" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="deselectTrack" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAsyncStatisticBufBackwards" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAsyncStatisticBufCapacity" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAsyncStatisticBufForwards" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAudioCachedBytes" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAudioCachedDuration" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAudioCachedPackets" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAudioSessionId" native="true" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBitRate" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCacheStatisticCountBytes" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCacheStatisticFileForwards" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCacheStatisticFilePos" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCacheStatisticPhysicalPos" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getColorFormatName" native="false" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentPosition" native="true" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDataSource" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDropFrameRate" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDuration" native="true" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFileSize" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMediaInfo" native="false" return="tv.danmaku.ijk.media.player.MediaInfo" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMediaMeta" native="false" return="android.os.Bundle" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSeekLoadDuration" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSelectedTrack" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSpeed" native="false" return="float" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTcpSpeed" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTrackInfo" native="false" return="tv.danmaku.ijk.media.player.misc.IjkTrackInfo[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTrafficStatisticByteCount" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoCachedBytes" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoCachedDuration" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoCachedPackets" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoDecodeFramesPerSecond" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoDecoder" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoOutputFramesPerSecond" native="false" return="float" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoSarDen" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoSarNum" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="httphookReconnect" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isLooping" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isPlayable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isPlaying" native="true" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadLibrariesOnce" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IjkLibLoader">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="native_profileBegin" native="true" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="native_profileEnd" native="true" return="void" static="true" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="native_setLogLevel" native="true" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pause" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="prepareAsync" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="seekTo" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="selectTrack" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAndroidIOCallback" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.misc.IAndroidIO">
+</parameter>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAudioStreamType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setCacheShare" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+<parameter name="p2" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.FileDescriptor">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDisplay" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.SurfaceHolder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setKeepInBackground" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLogEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLooping" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnControlMessageListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IjkMediaPlayer.OnControlMessageListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnMediaCodecSelectListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IjkMediaPlayer.OnMediaCodecSelectListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnNativeInvokeListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IjkMediaPlayer.OnNativeInvokeListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOption" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOption" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="long">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScreenOnWhilePlaying" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSpeed" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSurface" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.Surface">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVolume" native="true" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setWakeMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="start" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="FFP_PROPV_DECODER_AVCODEC" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROPV_DECODER_MEDIACODEC" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROPV_DECODER_UNKNOWN" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROPV_DECODER_VIDEOTOOLBOX" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_FLOAT_DROP_FRAME_RATE" static="true" transient="false" type="int" type-generic-aware="int" value="10007" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_FLOAT_PLAYBACK_RATE" static="true" transient="false" type="int" type-generic-aware="int" value="10003" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_ASYNC_STATISTIC_BUF_BACKWARDS" static="true" transient="false" type="int" type-generic-aware="int" value="20201" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_ASYNC_STATISTIC_BUF_CAPACITY" static="true" transient="false" type="int" type-generic-aware="int" value="20203" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_ASYNC_STATISTIC_BUF_FORWARDS" static="true" transient="false" type="int" type-generic-aware="int" value="20202" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_AUDIO_CACHED_BYTES" static="true" transient="false" type="int" type-generic-aware="int" value="20008" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_AUDIO_CACHED_DURATION" static="true" transient="false" type="int" type-generic-aware="int" value="20006" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_AUDIO_CACHED_PACKETS" static="true" transient="false" type="int" type-generic-aware="int" value="20010" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_AUDIO_DECODER" static="true" transient="false" type="int" type-generic-aware="int" value="20004" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_BIT_RATE" static="true" transient="false" type="int" type-generic-aware="int" value="20100" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_CACHE_STATISTIC_COUNT_BYTES" static="true" transient="false" type="int" type-generic-aware="int" value="20208" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_CACHE_STATISTIC_FILE_FORWARDS" static="true" transient="false" type="int" type-generic-aware="int" value="20206" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_CACHE_STATISTIC_FILE_POS" static="true" transient="false" type="int" type-generic-aware="int" value="20207" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_CACHE_STATISTIC_PHYSICAL_POS" static="true" transient="false" type="int" type-generic-aware="int" value="20205" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_IMMEDIATE_RECONNECT" static="true" transient="false" type="int" type-generic-aware="int" value="20211" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_LATEST_SEEK_LOAD_DURATION" static="true" transient="false" type="int" type-generic-aware="int" value="20300" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_LOGICAL_FILE_SIZE" static="true" transient="false" type="int" type-generic-aware="int" value="20209" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_SELECTED_AUDIO_STREAM" static="true" transient="false" type="int" type-generic-aware="int" value="20002" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_SELECTED_TIMEDTEXT_STREAM" static="true" transient="false" type="int" type-generic-aware="int" value="20011" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_SELECTED_VIDEO_STREAM" static="true" transient="false" type="int" type-generic-aware="int" value="20001" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_SHARE_CACHE_DATA" static="true" transient="false" type="int" type-generic-aware="int" value="20210" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_TCP_SPEED" static="true" transient="false" type="int" type-generic-aware="int" value="20200" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_TRAFFIC_STATISTIC_BYTE_COUNT" static="true" transient="false" type="int" type-generic-aware="int" value="20204" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_VIDEO_CACHED_BYTES" static="true" transient="false" type="int" type-generic-aware="int" value="20007" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_VIDEO_CACHED_DURATION" static="true" transient="false" type="int" type-generic-aware="int" value="20005" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_VIDEO_CACHED_PACKETS" static="true" transient="false" type="int" type-generic-aware="int" value="20009" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="FFP_PROP_INT64_VIDEO_DECODER" static="true" transient="false" type="int" type-generic-aware="int" value="20003" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJK_LOG_DEBUG" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJK_LOG_DEFAULT" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJK_LOG_ERROR" static="true" transient="false" type="int" type-generic-aware="int" value="6" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJK_LOG_FATAL" static="true" transient="false" type="int" type-generic-aware="int" value="7" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJK_LOG_INFO" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJK_LOG_SILENT" static="true" transient="false" type="int" type-generic-aware="int" value="8" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJK_LOG_UNKNOWN" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJK_LOG_VERBOSE" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="IJK_LOG_WARN" static="true" transient="false" type="int" type-generic-aware="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_SET_VIDEO_SAR" static="true" transient="false" type="int" type-generic-aware="int" value="10001" visibility="protected" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OPT_CATEGORY_CODEC" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OPT_CATEGORY_FORMAT" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OPT_CATEGORY_PLAYER" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="OPT_CATEGORY_SWS" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROP_FLOAT_VIDEO_DECODE_FRAMES_PER_SECOND" static="true" transient="false" type="int" type-generic-aware="int" value="10001" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="PROP_FLOAT_VIDEO_OUTPUT_FRAMES_PER_SECOND" static="true" transient="false" type="int" type-generic-aware="int" value="10002" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SDL_FCC_RV16" static="true" transient="false" type="int" type-generic-aware="int" value="909203026" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SDL_FCC_RV32" static="true" transient="false" type="int" type-generic-aware="int" value="842225234" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="SDL_FCC_YV12" static="true" transient="false" type="int" type-generic-aware="int" value="842094169" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="IjkMediaPlayer.1" static="true" visibility="">
+<implements name="tv.danmaku.ijk.media.player.IjkLibLoader" name-generic-aware="tv.danmaku.ijk.media.player.IjkLibLoader">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="loadLibrary" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+<exception name="UnsatisfiedLinkError" type="java.lang.UnsatisfiedLinkError">
+</exception>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="IjkMediaPlayer.DefaultMediaCodecSelector" static="true" visibility="public">
+<implements name="tv.danmaku.ijk.media.player.IjkMediaPlayer.OnMediaCodecSelectListener" name-generic-aware="tv.danmaku.ijk.media.player.IjkMediaPlayer.OnMediaCodecSelectListener">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="IjkMediaPlayer.DefaultMediaCodecSelector" static="false" type="tv.danmaku.ijk.media.player.IjkMediaPlayer.DefaultMediaCodecSelector" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="onMediaCodecSelect" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="sInstance" static="true" transient="false" type="tv.danmaku.ijk.media.player.IjkMediaPlayer.DefaultMediaCodecSelector" type-generic-aware="tv.danmaku.ijk.media.player.IjkMediaPlayer.DefaultMediaCodecSelector" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="android.os.Handler" extends-generic-aware="android.os.Handler" final="false" name="IjkMediaPlayer.EventHandler" static="true" visibility="">
+<constructor deprecated="not deprecated" final="false" name="IjkMediaPlayer.EventHandler" static="false" type="tv.danmaku.ijk.media.player.IjkMediaPlayer.EventHandler" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IjkMediaPlayer">
+</parameter>
+<parameter name="p1" type="android.os.Looper">
+</parameter>
+</constructor>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IjkMediaPlayer.OnControlMessageListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onControlResolveSegmentUrl" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IjkMediaPlayer.OnMediaCodecSelectListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onMediaCodecSelect" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IjkMediaPlayer.OnNativeInvokeListener" static="true" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="onNativeInvoke" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+<parameter name="p1" type="android.os.Bundle">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ARG_ERROR" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;error&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ARG_FAMILIY" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;family&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ARG_FD" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;fd&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ARG_FILE_SIZE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;file_size&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ARG_HTTP_CODE" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;http_code&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ARG_IP" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;ip&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ARG_OFFSET" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;offset&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ARG_PORT" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;port&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ARG_RETRY_COUNTER" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;retry_counter&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ARG_SEGMENT_INDEX" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;segment_index&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ARG_URL" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;url&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CTRL_DID_TCP_OPEN" static="true" transient="false" type="int" type-generic-aware="int" value="131074" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CTRL_WILL_CONCAT_RESOLVE_SEGMENT" static="true" transient="false" type="int" type-generic-aware="int" value="131079" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CTRL_WILL_HTTP_OPEN" static="true" transient="false" type="int" type-generic-aware="int" value="131075" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CTRL_WILL_LIVE_OPEN" static="true" transient="false" type="int" type-generic-aware="int" value="131077" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="CTRL_WILL_TCP_OPEN" static="true" transient="false" type="int" type-generic-aware="int" value="131073" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EVENT_DID_HTTP_OPEN" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EVENT_DID_HTTP_SEEK" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EVENT_WILL_HTTP_OPEN" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="EVENT_WILL_HTTP_SEEK" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="true" name="IjkTimedText" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IjkTimedText" static="false" type="tv.danmaku.ijk.media.player.IjkTimedText" visibility="public">
+<parameter name="p0" type="android.graphics.Rect">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getBounds" native="false" return="android.graphics.Rect" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getText" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MediaInfo" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="MediaInfo" static="false" type="tv.danmaku.ijk.media.player.MediaInfo" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="false" name="mAudioDecoder" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mAudioDecoderImpl" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mMediaPlayerName" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mMeta" static="false" transient="false" type="tv.danmaku.ijk.media.player.IjkMediaMeta" type-generic-aware="tv.danmaku.ijk.media.player.IjkMediaMeta" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mVideoDecoder" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="false" name="mVideoDecoderImpl" static="false" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MediaPlayerProxy" static="false" visibility="public">
+<implements name="tv.danmaku.ijk.media.player.IMediaPlayer" name-generic-aware="tv.danmaku.ijk.media.player.IMediaPlayer">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="MediaPlayerProxy" static="false" type="tv.danmaku.ijk.media.player.MediaPlayerProxy" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getAudioSessionId" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getCurrentPosition" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDataSource" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDuration" native="false" return="long" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInternalMediaPlayer" native="false" return="tv.danmaku.ijk.media.player.IMediaPlayer" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getMediaInfo" native="false" return="tv.danmaku.ijk.media.player.MediaInfo" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTrackInfo" native="false" return="tv.danmaku.ijk.media.player.misc.ITrackInfo[]" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoHeight" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoSarDen" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoSarNum" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getVideoWidth" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isLooping" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isPlayable" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="isPlaying" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="pause" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="prepareAsync" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="release" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="reset" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="seekTo" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setAudioStreamType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="android.net.Uri">
+</parameter>
+<parameter name="p2" type="java.util.Map&lt;java.lang.String, java.lang.String&gt;">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.io.FileDescriptor">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+<exception name="IllegalArgumentException" type="java.lang.IllegalArgumentException">
+</exception>
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+<exception name="SecurityException" type="java.lang.SecurityException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDataSource" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.misc.IMediaDataSource">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setDisplay" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.SurfaceHolder">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setKeepInBackground" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLogEnabled" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setLooping" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnBufferingUpdateListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnBufferingUpdateListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnCompletionListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnCompletionListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnErrorListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnErrorListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnInfoListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnInfoListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnPreparedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnPreparedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnSeekCompleteListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnSeekCompleteListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnTimedTextListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnTimedTextListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setOnVideoSizeChangedListener" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer.OnVideoSizeChangedListener">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setScreenOnWhilePlaying" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="boolean">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSurface" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.view.Surface">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setVolume" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="float">
+</parameter>
+<parameter name="p1" type="float">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setWakeMode" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.content.Context">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="start" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="stop" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IllegalStateException" type="java.lang.IllegalStateException">
+</exception>
+</method>
+<field deprecated="not deprecated" final="true" name="mBackEndMediaPlayer" static="false" transient="false" type="tv.danmaku.ijk.media.player.IMediaPlayer" type-generic-aware="tv.danmaku.ijk.media.player.IMediaPlayer" visibility="protected" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MediaPlayerProxy.1" static="false" visibility="">
+<implements name="tv.danmaku.ijk.media.player.IMediaPlayer.OnPreparedListener" name-generic-aware="tv.danmaku.ijk.media.player.IMediaPlayer.OnPreparedListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onPrepared" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MediaPlayerProxy.2" static="false" visibility="">
+<implements name="tv.danmaku.ijk.media.player.IMediaPlayer.OnCompletionListener" name-generic-aware="tv.danmaku.ijk.media.player.IMediaPlayer.OnCompletionListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onCompletion" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MediaPlayerProxy.3" static="false" visibility="">
+<implements name="tv.danmaku.ijk.media.player.IMediaPlayer.OnBufferingUpdateListener" name-generic-aware="tv.danmaku.ijk.media.player.IMediaPlayer.OnBufferingUpdateListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onBufferingUpdate" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MediaPlayerProxy.4" static="false" visibility="">
+<implements name="tv.danmaku.ijk.media.player.IMediaPlayer.OnSeekCompleteListener" name-generic-aware="tv.danmaku.ijk.media.player.IMediaPlayer.OnSeekCompleteListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onSeekComplete" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MediaPlayerProxy.5" static="false" visibility="">
+<implements name="tv.danmaku.ijk.media.player.IMediaPlayer.OnVideoSizeChangedListener" name-generic-aware="tv.danmaku.ijk.media.player.IMediaPlayer.OnVideoSizeChangedListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onVideoSizeChanged" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<parameter name="p4" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MediaPlayerProxy.6" static="false" visibility="">
+<implements name="tv.danmaku.ijk.media.player.IMediaPlayer.OnErrorListener" name-generic-aware="tv.danmaku.ijk.media.player.IMediaPlayer.OnErrorListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onError" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MediaPlayerProxy.7" static="false" visibility="">
+<implements name="tv.danmaku.ijk.media.player.IMediaPlayer.OnInfoListener" name-generic-aware="tv.danmaku.ijk.media.player.IMediaPlayer.OnInfoListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onInfo" native="false" return="boolean" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="MediaPlayerProxy.8" static="false" visibility="">
+<implements name="tv.danmaku.ijk.media.player.IMediaPlayer.OnTimedTextListener" name-generic-aware="tv.danmaku.ijk.media.player.IMediaPlayer.OnTimedTextListener">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="onTimedText" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+<parameter name="p1" type="tv.danmaku.ijk.media.player.IjkTimedText">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="tv.danmaku.ijk.media.player.MediaPlayerProxy" extends-generic-aware="tv.danmaku.ijk.media.player.MediaPlayerProxy" final="false" name="TextureMediaPlayer" static="false" visibility="public">
+<implements name="tv.danmaku.ijk.media.player.IMediaPlayer" name-generic-aware="tv.danmaku.ijk.media.player.IMediaPlayer">
+</implements>
+<implements name="tv.danmaku.ijk.media.player.ISurfaceTextureHolder" name-generic-aware="tv.danmaku.ijk.media.player.ISurfaceTextureHolder">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="TextureMediaPlayer" static="false" type="tv.danmaku.ijk.media.player.TextureMediaPlayer" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IMediaPlayer">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getSurfaceTexture" native="false" return="android.graphics.SurfaceTexture" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="releaseSurfaceTexture" native="false" return="void" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSurfaceTexture" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="android.graphics.SurfaceTexture">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setSurfaceTextureHost" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.ISurfaceTextureHost">
+</parameter>
+</method>
+</class>
+</package>
+<package name="tv.danmaku.ijk.media.player.annotations">
+<interface abstract="true" deprecated="not deprecated" final="false" name="AccessedByNative" static="false" visibility="public">
+<implements name="java.lang.annotation.Annotation" name-generic-aware="java.lang.annotation.Annotation">
+</implements>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="CalledByNative" static="false" visibility="public">
+<implements name="java.lang.annotation.Annotation" name-generic-aware="java.lang.annotation.Annotation">
+</implements>
+<method abstract="true" deprecated="not deprecated" final="false" name="value" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+</interface>
+</package>
+<package name="tv.danmaku.ijk.media.player.exceptions">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Exception" extends-generic-aware="java.lang.Exception" final="false" name="IjkMediaException" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="IjkMediaException" static="false" type="tv.danmaku.ijk.media.player.exceptions.IjkMediaException" visibility="public">
+</constructor>
+</class>
+</package>
+<package name="tv.danmaku.ijk.media.player.ffmpeg">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="FFmpegApi" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="FFmpegApi" static="false" type="tv.danmaku.ijk.media.player.ffmpeg.FFmpegApi" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="av_base64_encode" native="true" return="java.lang.String" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+</method>
+</class>
+</package>
+<package name="tv.danmaku.ijk.media.player.misc">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AndroidMediaFormat" static="false" visibility="public">
+<implements name="tv.danmaku.ijk.media.player.misc.IMediaFormat" name-generic-aware="tv.danmaku.ijk.media.player.misc.IMediaFormat">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="AndroidMediaFormat" static="false" type="tv.danmaku.ijk.media.player.misc.AndroidMediaFormat" visibility="public">
+<parameter name="p0" type="android.media.MediaFormat">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInteger" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="AndroidTrackInfo" static="false" visibility="public">
+<implements name="tv.danmaku.ijk.media.player.misc.ITrackInfo" name-generic-aware="tv.danmaku.ijk.media.player.misc.ITrackInfo">
+</implements>
+<method abstract="false" deprecated="not deprecated" final="false" name="fromMediaPlayer" native="false" return="tv.danmaku.ijk.media.player.misc.AndroidTrackInfo[]" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="android.media.MediaPlayer">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFormat" native="false" return="tv.danmaku.ijk.media.player.misc.IMediaFormat" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInfoInline" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLanguage" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTrackType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+</class>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IAndroidIO" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="close" native="false" return="int" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="open" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="read" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="byte[]">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="seek" native="false" return="long" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IMediaDataSource" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="close" native="false" return="void" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getSize" native="false" return="long" static="false" synchronized="false" visibility="public">
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="readAt" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="long">
+</parameter>
+<parameter name="p1" type="byte[]">
+</parameter>
+<parameter name="p2" type="int">
+</parameter>
+<parameter name="p3" type="int">
+</parameter>
+<exception name="IOException" type="java.io.IOException">
+</exception>
+</method>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="IMediaFormat" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getInteger" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="KEY_HEIGHT" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;height&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_MIME" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;mime&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_WIDTH" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;width&quot;" visibility="public" volatile="false">
+</field>
+</interface>
+<interface abstract="true" deprecated="not deprecated" final="false" name="ITrackInfo" static="false" visibility="public">
+<method abstract="true" deprecated="not deprecated" final="false" name="getFormat" native="false" return="tv.danmaku.ijk.media.player.misc.IMediaFormat" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getInfoInline" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getLanguage" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="true" deprecated="not deprecated" final="false" name="getTrackType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<field deprecated="not deprecated" final="true" name="MEDIA_TRACK_TYPE_AUDIO" static="true" transient="false" type="int" type-generic-aware="int" value="2" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_TRACK_TYPE_METADATA" static="true" transient="false" type="int" type-generic-aware="int" value="5" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_TRACK_TYPE_SUBTITLE" static="true" transient="false" type="int" type-generic-aware="int" value="4" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_TRACK_TYPE_TIMEDTEXT" static="true" transient="false" type="int" type-generic-aware="int" value="3" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_TRACK_TYPE_UNKNOWN" static="true" transient="false" type="int" type-generic-aware="int" value="0" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="MEDIA_TRACK_TYPE_VIDEO" static="true" transient="false" type="int" type-generic-aware="int" value="1" visibility="public" volatile="false">
+</field>
+</interface>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="IjkMediaFormat" static="false" visibility="public">
+<implements name="tv.danmaku.ijk.media.player.misc.IMediaFormat" name-generic-aware="tv.danmaku.ijk.media.player.misc.IMediaFormat">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="IjkMediaFormat" static="false" type="tv.danmaku.ijk.media.player.misc.IjkMediaFormat" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IjkMediaMeta.IjkStreamMeta">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInteger" native="false" return="int" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="CODEC_NAME_H264" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;h264&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_IJK_BIT_RATE_UI" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;ijk-bit-rate-ui&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_IJK_CHANNEL_UI" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;ijk-channel-ui&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_IJK_CODEC_LONG_NAME_UI" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;ijk-codec-long-name-ui&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_IJK_CODEC_NAME_UI" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;ijk-codec-name-ui&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_IJK_CODEC_PIXEL_FORMAT_UI" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;ijk-pixel-format-ui&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_IJK_CODEC_PROFILE_LEVEL_UI" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;ijk-profile-level-ui&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_IJK_FRAME_RATE_UI" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;ijk-frame-rate-ui&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_IJK_RESOLUTION_UI" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;ijk-resolution-ui&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="KEY_IJK_SAMPLE_RATE_UI" static="true" transient="false" type="java.lang.String" type-generic-aware="java.lang.String" value="&quot;ijk-sample-rate-ui&quot;" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="mMediaFormat" static="false" transient="false" type="tv.danmaku.ijk.media.player.IjkMediaMeta.IjkStreamMeta" type-generic-aware="tv.danmaku.ijk.media.player.IjkMediaMeta.IjkStreamMeta" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" extends-generic-aware="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" final="false" name="IjkMediaFormat.1" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="doFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.misc.IjkMediaFormat">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" extends-generic-aware="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" final="false" name="IjkMediaFormat.2" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="doFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.misc.IjkMediaFormat">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" extends-generic-aware="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" final="false" name="IjkMediaFormat.3" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="doFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.misc.IjkMediaFormat">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" extends-generic-aware="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" final="false" name="IjkMediaFormat.4" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="doFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.misc.IjkMediaFormat">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" extends-generic-aware="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" final="false" name="IjkMediaFormat.5" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="doFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.misc.IjkMediaFormat">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" extends-generic-aware="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" final="false" name="IjkMediaFormat.6" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="doFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.misc.IjkMediaFormat">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" extends-generic-aware="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" final="false" name="IjkMediaFormat.7" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="doFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.misc.IjkMediaFormat">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" extends-generic-aware="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" final="false" name="IjkMediaFormat.8" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="doFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.misc.IjkMediaFormat">
+</parameter>
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" extends-generic-aware="tv.danmaku.ijk.media.player.misc.IjkMediaFormat.Formatter" final="false" name="IjkMediaFormat.9" static="false" visibility="">
+<method abstract="false" deprecated="not deprecated" final="false" name="doFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.misc.IjkMediaFormat">
+</parameter>
+</method>
+</class>
+<class abstract="true" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="IjkMediaFormat.Formatter" static="true" visibility="">
+<method abstract="true" deprecated="not deprecated" final="false" name="doFormat" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.misc.IjkMediaFormat">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="format" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.misc.IjkMediaFormat">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getDefaultString" native="false" return="java.lang.String" static="false" synchronized="false" visibility="protected">
+</method>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="IjkTrackInfo" static="false" visibility="public">
+<implements name="tv.danmaku.ijk.media.player.misc.ITrackInfo" name-generic-aware="tv.danmaku.ijk.media.player.misc.ITrackInfo">
+</implements>
+<constructor deprecated="not deprecated" final="false" name="IjkTrackInfo" static="false" type="tv.danmaku.ijk.media.player.misc.IjkTrackInfo" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IjkMediaMeta.IjkStreamMeta">
+</parameter>
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="getFormat" native="false" return="tv.danmaku.ijk.media.player.misc.IMediaFormat" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getInfoInline" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getLanguage" native="false" return="java.lang.String" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="getTrackType" native="false" return="int" static="false" synchronized="false" visibility="public">
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setMediaMeta" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="tv.danmaku.ijk.media.player.IjkMediaMeta.IjkStreamMeta">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="setTrackType" native="false" return="void" static="false" synchronized="false" visibility="public">
+<parameter name="p0" type="int">
+</parameter>
+</method>
+</class>
+</package>
+<package name="tv.danmaku.ijk.media.player.pragma">
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="DebugLog" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="DebugLog" static="false" type="tv.danmaku.ijk.media.player.pragma.DebugLog" visibility="public">
+</constructor>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="d" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="dfmt" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Object...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="e" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="efmt" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Object...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="i" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="i" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="ifmt" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Object...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="printCause" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="printStackTrace" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="v" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="v" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="vfmt" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Object...">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="w" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="w" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Throwable">
+</parameter>
+</method>
+<method abstract="false" deprecated="not deprecated" final="false" name="wfmt" native="false" return="void" static="true" synchronized="false" visibility="public">
+<parameter name="p0" type="java.lang.String">
+</parameter>
+<parameter name="p1" type="java.lang.String">
+</parameter>
+<parameter name="p2" type="java.lang.Object...">
+</parameter>
+</method>
+<field deprecated="not deprecated" final="true" name="ENABLE_DEBUG" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="true" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ENABLE_ERROR" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="true" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ENABLE_INFO" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="true" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ENABLE_VERBOSE" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="true" visibility="public" volatile="false">
+</field>
+<field deprecated="not deprecated" final="true" name="ENABLE_WARN" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="true" visibility="public" volatile="false">
+</field>
+</class>
+<class abstract="false" deprecated="not deprecated" extends="java.lang.Object" extends-generic-aware="java.lang.Object" final="false" name="Pragma" static="false" visibility="public">
+<constructor deprecated="not deprecated" final="false" name="Pragma" static="false" type="tv.danmaku.ijk.media.player.pragma.Pragma" visibility="public">
+</constructor>
+<field deprecated="not deprecated" final="true" name="ENABLE_VERBOSE" static="true" transient="false" type="boolean" type-generic-aware="boolean" value="true" visibility="public" volatile="false">
+</field>
+</class>
+</package>
+</api>

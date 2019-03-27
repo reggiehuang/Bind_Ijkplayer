@@ -1,0 +1,8 @@
+tv/danmaku/ijk/media/player_x86_64/BuildConfig = TV.Danmaku.Ijk.Media.Player_x86_64.BuildConfig
+  <init>()V = .ctor()
+  APPLICATION_ID = ApplicationId
+  BUILD_TYPE = BuildType
+  DEBUG = Debug
+  FLAVOR = Flavor
+  VERSION_CODE = VersionCode
+  VERSION_NAME = VersionName

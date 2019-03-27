@@ -1,0 +1,6 @@
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "tv.danmaku.ijk.media.player", Managed="TV.Danmaku.Ijk.Media.Player")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "tv.danmaku.ijk.media.player.annotations", Managed="TV.Danmaku.Ijk.Media.Player.Annotations")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "tv.danmaku.ijk.media.player.exceptions", Managed="TV.Danmaku.Ijk.Media.Player.Exceptions")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "tv.danmaku.ijk.media.player.ffmpeg", Managed="TV.Danmaku.Ijk.Media.Player.Ffmpeg")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "tv.danmaku.ijk.media.player.misc", Managed="TV.Danmaku.Ijk.Media.Player.Misc")]
+[assembly:global::Android.Runtime.NamespaceMapping (Java = "tv.danmaku.ijk.media.player.pragma", Managed="TV.Danmaku.Ijk.Media.Player.Pragma")]
